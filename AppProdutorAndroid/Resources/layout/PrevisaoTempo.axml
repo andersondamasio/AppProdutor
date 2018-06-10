@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ovLL_Tudo"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#a2c652">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:background="#a2c652">
+
+
+  <ListView android:id="@+id/ovLV_PrevisaoTempo" 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"></ListView>
+
+
+  </LinearLayout>
+</LinearLayout>

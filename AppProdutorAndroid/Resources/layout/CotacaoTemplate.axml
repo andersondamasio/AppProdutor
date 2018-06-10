@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="#a2c652">
+    <TextView
+    android:id="@+id/ovTV_IdProduto"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#372c24"
+              android:layout_weight="0.25"
+              android:text="descricao"/>
+    <TextView
+     android:id="@+id/ovTV_Descricao"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+               android:layout_weight="0.25"
+               android:text="descricao"/>
+    <TextView
+       android:id="@+id/ovTV_ValorCotacao"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+       android:layout_weight="0.25"
+                 android:text="ovTV_ValorCotacao"
+               />
+    <TextView android:id="@+id/ovTV_DataCotacao"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+                 android:layout_weight="0.25"
+                 android:text="ovTV_DataCotacao" />
+
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="#a2c652">
+    <TextView
+    android:id="@+id/ovTV_Data"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#372c24"
+              android:layout_weight="0.25"
+              android:text="descricao"/>
+    <TextView
+     android:id="@+id/ovTV_NumeroPedido"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+               android:layout_weight="0.25"
+               android:text="descricao"/>
+    <TextView
+       android:id="@+id/ovTV_Quantidade"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+       android:layout_weight="0.25"
+                 android:text="ovTV_ValorCotacao"
+               />
+    <TextView android:id="@+id/ovTV_Produto"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+                 android:layout_weight="0.25"
+                 android:text="ovTV_DataCotacao" />
+
+  </LinearLayout>
+  <View style="@style/Form.Division" />
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="#a2c652">
+    <TextView
+    android:id="@+id/ovTV_ValorUnitario"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#372c24"
+              android:layout_weight="0.25"
+              android:text="descricao"/>
+    <TextView
+     android:id="@+id/ovTV_ValorTotal"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+               android:layout_weight="0.25"
+               android:text="descricao"/>
+    <TextView
+       android:id="@+id/ovTV_QuantidadeFaturada"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+       android:layout_weight="0.25"
+                 android:text="ovTV_ValorCotacao"
+               />
+    <TextView android:id="@+id/ovTV_ValorFatudaro"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+                 android:layout_weight="0.25"
+                 android:text="ovTV_DataCotacao" />
+
+  </LinearLayout>
+  <View style="@style/Form.Division" />
+  <LinearLayout
+   android:orientation="horizontal"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+     android:background="#a2c652">
+    <TextView
+    android:id="@+id/ovTV_ValorAFaturar"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#372c24"
+              android:layout_weight="0.25"
+              android:text="descricao"/>
+    <TextView
+     android:id="@+id/ovTV_QuantidadeAFaturar"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+               android:layout_weight="0.25"
+               android:text="descricao"/>
+    <TextView
+       android:id="@+id/ovTV_Produtor"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+       android:layout_weight="0.25"
+                 android:text="ovTV_ValorCotacao"
+               />
+    <TextView android:id="@+id/ovTV_Status"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#372c24"
+                 android:layout_weight="0.25"
+                 android:text="ovTV_DataCotacao" />
+
+  </LinearLayout>
+  <View style="@style/Form.Division" />
+</LinearLayout>

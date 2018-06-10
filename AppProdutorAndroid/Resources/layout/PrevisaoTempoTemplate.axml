@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="#a2c652">
+    <TextView
+     android:id="@+id/ovTV_Local"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+               android:layout_weight="0.33"
+               android:text="ovTV_Local"/>
+  <TextView
+     android:id="@+id/ovTV_TemperaturaMaxima"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+     android:layout_weight="0.33"
+               android:text="ovTV_TemperaturaMaxima"
+               />
+  <TextView android:id="@+id/ovTV_Condicoes"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#372c24"
+               android:layout_weight="0.33"
+               android:text="ovTV_Condicoes" />
+    
+  </LinearLayout>
+</LinearLayout>

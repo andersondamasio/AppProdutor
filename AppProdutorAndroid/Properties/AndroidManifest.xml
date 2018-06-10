@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.datacoper.appprodutor" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" />
+    <application android:largeHeap="true" android:allowBackup="true" android:icon="@drawable/ic_logo" android:theme="@style/AppTheme" android:label="@string/app_name">
+      <!--android:persistent="true"
+      <activity android:name="com.datacoper.appprodutor.Activities.SplashScreen" android:theme="@style/AppTheme.SplashScreen" android:noHistory="true">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>-->
+      <activity android:name="com.datacoper.appprodutor.Activities.Login.LoginActivity" android:label="@string/app_name" />
+    
+    
+  </application>
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a2c652"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/ic_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Usuário" />
+          <EditText
+            android:id="@+id/ovET_Usuario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:text="admin"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Senha" />
+          <EditText
+            android:id="@+id/ovET_Senha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true" 
+                android:text="admin"/>
+            <Button
+                android:id="@+id/ovBT_Entrar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Entrar" />
+            <TextView
+                android:id="@+id/ovTV_Cadastrar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="Cadastre-se"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#0b84aa" />
+          <CheckBox
+             android:text="Lembrar-me"
+           android:textColor="#0b84aa"
+           android:id="@+id/ovCB_MeLembrar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+             android:gravity="center"
+                android:textSize="20dip"
+           android:checked="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,444 @@
+﻿<resources>
+
+  <!-- APPTHEME -->
+  <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    <item name="android:actionBarStyle">@style/CustomActionBar</item>
+    <item name="android:radioButtonStyle">@style/RadioButton</item>
+    <item name="android:checkboxStyle">@style/CheckBox</item>
+  </style>
+
+
+  <!-- APPTHEME -> SPLASH SCREEN -->
+  <style name="AppTheme.SplashScreen" parent="AppTheme">
+    <item name="android:windowBackground">@drawable/ic_launcher_splash</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.NoTitleBar" parent="AppTheme">
+    <item name="android:windowActionBar">false</item>
+    <item name="android:windowTitleSize">0dp</item>
+  </style>
+
+
+  <!-- APPTHEME -> ACTION BAR -->
+  <style name="CustomActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">@color/cor_principal_crm</item>
+  </style>
+
+  <!-- APPTHEME -> LOGIN -->
+  <style name="AppTheme.Login">
+    <item name="android:background">@color/cor_principal_crm</item>
+  </style>
+
+  <style name="AppTheme.Login.Image">
+    <item name="android:background">@drawable/ic_launcher_splash</item>
+  </style>
+
+
+  <style name="EditText.Login" parent="Form.EditText.Single">
+    <item name="android:textColorHint">#ffada6</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:background">#ffffffff</item>
+    <item name="android:textSize">13dp</item>
+  </style>
+
+  <style name="Button.Login" parent="android:Theme.Holo.Light">
+    <item name="android:background">@drawable/button_sign_login</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:textSize">13dp</item>
+  </style>
+
+
+  <!-- APPTHEME -> COMPONENTES GENERICOS -->
+  <style name="TextView" parent="android:Widget.TextView">
+    <item name="android:typeface">sans</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+  </style>
+
+  <style name="EditText" parent="android:Widget.EditText">
+    <item name="android:typeface">sans</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+  </style>
+
+  <style name="AutoCompleteTextView" parent="android:Widget.AutoCompleteTextView">
+    <item name="android:typeface">sans</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+  </style>
+
+  <style name="RadioButton" parent="android:Widget.Holo.Light.CompoundButton.RadioButton">
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:textColorHint">@color/cor_secundaria_opacity_60_crm</item>
+  </style>
+
+  <style name="CheckBox" parent="android:Widget.Holo.Light.CompoundButton.CheckBox">
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:textColorHint">@color/cor_secundaria_opacity_60_crm</item>
+  </style>
+
+  <style name="Button" parent="android:Widget.Button">
+    <item name="android:typeface">sans</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+  </style>
+
+
+  <!-- APPTHEME -> DASHBOARD MENU -->
+  <style name="Dashboard"></style>
+
+  <style name="Dashboard.Layout">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:background">#fff</item>
+    <!-- <item name="android:paddingLeft">5dp</item> -->
+    <!-- <item name="android:paddingRight">5dp</item> -->
+    <!-- <item name="android:paddingTop">30dp</item> -->
+    <!-- <item name="android:paddingBottom">30dp</item> -->
+  </style>
+
+  <style name="Dashboard.Layout.Grid">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="Dashboard.Button" parent="Form.Group.Last">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">12dp</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:background">#fff</item>
+    <item name="android:drawablePadding">10dp</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+ 
+
+  <!-- APPTHEME -> FORMULARIO -->
+  <style name="Form"></style>
+
+  <style name="Form.Layout">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:padding">@dimen/padding_tela</item>
+    <item name="android:background">#fff</item>
+    <item name="android:focusable">true</item>
+    <item name="android:focusableInTouchMode">true</item>
+  </style>
+
+  <style name="Form.Row">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:weightSum">1</item>
+    <item name="android:layout_marginBottom">10dp</item>
+  </style>
+
+  <style name="Form.Row.Padding" parent="Form.Row">
+    <item name="android:padding">@dimen/padding_tela</item>
+    <item name="android:layout_marginBottom">0dp</item>
+  </style>
+
+  <style name="Form.Row.Padding.Line" parent="Form.Row">
+    <item name="android:paddingLeft">@dimen/padding_tela</item>
+    <item name="android:paddingRight">@dimen/padding_tela</item>
+    <item name="android:paddingBottom">@dimen/padding_tela</item>
+    <item name="android:layout_marginBottom">0dp</item>
+  </style>
+
+  <style name="Form.Group">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_marginRight">15dp</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="Form.Group.Last" parent="Form.Group">
+    <item name="android:layout_marginRight">0dp</item>
+  </style>
+
+
+  <!-- APPTHEME -> FORMULARIO -> TEXTVIEW -->
+  <style name="Form.TextView.Label" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_marginBottom">5dp</item>
+    <item name="android:textSize">13dp</item>
+  </style>
+
+  <style name="Form.TextView.Title" parent="Form.TextView.Label">
+    <item name="android:textSize">15dp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="Form.TextView.SubTitle" parent="Form.TextView.Label">
+    <item name="android:paddingLeft">8dp</item>
+  </style>
+
+  <style name="Form.TextView.Info" parent="Form.TextView.Label">
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="Form.TextView.Info.Padding" parent="Form.TextView.Info">
+    <item name="android:paddingLeft">16dp</item>
+  </style>
+
+
+
+  <!-- APPTHEME -> FORMULARIO -> EDITTEXT -->
+  <style name="Form.EditText.Single" parent="EditText">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">35dp</item>
+    
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:textSize">14dp</item>
+    <item name="android:textColorHint">@color/cor_secundaria_opacity_60_crm</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingBottom">8dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:gravity">left</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:imeOptions">actionNext</item>
+  </style>
+
+  <style name="Form.EditText.Multiple" parent="Form.EditText.Single">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:inputType">textMultiLine</item>
+    <item name="android:ems">10</item>
+    <item name="android:lines">8</item>
+    <item name="android:gravity">top</item>
+  </style>
+
+  <style name="Form.EditText.Icon" parent="Form.EditText.Single">
+    <item name="android:focusableInTouchMode">true</item>
+    <item name="android:drawablePadding">7dp</item>
+    <item name="android:editable">false</item>
+  </style>
+
+
+  <style name="Form.EditText.Search" parent="Form.EditText.Icon">
+    <item name="android:drawableLeft">@drawable/ic_form_edittext_search</item>
+  </style>
+
+
+  <!-- APPTHEME -> FORMULARIO -> AUTOCOMPLETETEXTVIEW -->
+  <style name="Form.AutoCompleteTextView" parent="AutoCompleteTextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">35dp</item>
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:textSize">13dp</item>
+    <item name="android:textColorHint">@color/cor_secundaria_opacity_60_crm</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingBottom">8dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:drawSelectorOnTop">true</item>
+  </style>
+
+
+  <!-- APPTHEME -> FORMULARIO -> BUTTON -->
+  <style name="Form.Button" parent="Button">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">35dp</item>
+  </style>
+
+
+
+  <!-- APPTHEME -> FORMULARIO -> DIVISION -->
+  <style name="Form.Division">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">2dp</item>
+    <item name="android:background">@color/cor_secundaria_opacity_30_crm</item>
+  </style>
+
+
+  <!-- APPTHEME -> FORMULARIO -> LIST EMPTY -->
+  <style name="Form.ListEmpty">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="Form.ListEmpty.Padding" parent="Form.ListEmpty">
+    <item name="android:paddingTop">50dp</item>
+    <item name="android:paddingBottom">50dp</item>
+  </style>
+
+  <style name="Form.ListEmpty.Image">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <!--<item name="android:src">@drawable/</item>-->
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:layout_marginRight">10dp</item>
+  </style>
+
+  <style name="Form.ListEmpty.Text">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">14dp</item>
+    <item name="android:textColor">@color/cor_secundaria_opacity_60_crm</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:text">Nenhun registro encontrado</item>
+  </style>
+
+
+  <!-- APPTHEME -> FORMULARIO -> GPS INDICATOR -->
+  <style name="Form.GPS"></style>
+
+  <style name="Form.GPS.Icon">
+    <item name="android:layout_width">18dp</item>
+    <item name="android:layout_height">18dp</item>
+  </style>
+
+  <style name="Form.GPS.Label" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">11dp</item>
+    <item name="android:layout_marginTop">1dp</item>
+    <item name="android:layout_marginLeft">2dp</item>
+  </style>
+
+
+  <!-- APPTHEME -> FORMULARIO -> FIX AUTO FOCUS -->
+  <style name="Form.FixNoAutoFocus">
+    <item name="android:focusable">true</item>
+    <item name="android:focusableInTouchMode">true</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">0dp</item>
+  </style>
+
+
+  <!-- APPTHEME -> PAGE -->
+  <style name="Page"></style>
+
+  <style name="Page.Layout">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:background">#fff</item>
+  </style>
+
+  <style name="Page.Layout.Padding" parent="Page.Layout">
+    <item name="android:padding">@dimen/padding_tela</item>
+  </style>
+
+  <!-- APPTHEME -> PAGE -> TEXT CONTENT -->
+  <style name="Page.TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">15dp</item>
+    <item name="android:layout_marginBottom">@dimen/padding_tela</item>
+  </style>
+
+
+  <!-- APPTHEME -> PAGE -> LISTVIEW -->
+  <style name="Page.ListView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:headerDividersEnabled">true</item>
+    <item name="android:footerDividersEnabled">false</item>
+  </style>
+
+  <style name="Page.ListView.Group">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="Page.ListView.Template">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="Page.ListView.Template.Row">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:weightSum">1</item>
+  </style>
+
+  <style name="Page.ListView.Template.Group">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:padding">1dp</item>
+  </style>
+
+  <style name="Page.ListView.Template.Icon">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_centerHorizontal">true</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:scaleType">center</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.Title" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">14dp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.SubTitle" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">10dp</item>
+    <item name="android:layout_marginTop">1dp</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.RightInfo" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">9dp</item>
+    <item name="android:textColor">@color/cor_principal_crm</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">right</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.RightInfo.Size.14dp" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">14dp</item>
+    <item name="android:textColor">@color/cor_principal_crm</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">right</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.LeftInfo.Size.14dp" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">14dp</item>
+    <item name="android:textColor">@color/cor_principal_crm</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:gravity">left</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.RightInfoDefault" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">10dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">right</item>
+  </style>
+
+  <style name="Page.ListView.Template.Label.RightInfo.Label" parent="Page.ListView.Template.Label.RightInfo">
+    <item name="android:textColor">@color/cor_secundaria_crm</item>
+    <item name="android:textSize">9dp</item>
+  </style>
+
+  <!--  SELETOR -->
+  <style name="Page.Seletor.Row" parent="TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">14dp</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:paddingLeft">5dp</item>
+    <item name="android:paddingRight">5dp</item>
+  </style>
+
+
+  </resources>
